@@ -3,6 +3,11 @@
     --color-secondary: #33b1c0;
 }
 
+* {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
 .color--secondary {
     background-color: var(--color-secondary);
     color: white;
@@ -13,6 +18,9 @@
     color: rgb(255, 255, 255, 0.9);
 }
 
+#show--mobile {
+    display: none;
+}
 
 #teste {
     width: 70%;
@@ -20,6 +28,19 @@
     margin: auto;
     /* max-height: 80vh; */
     overflow: hidden;
+    border: #32313fe0 solid 3px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#teste img {
+    /* border: #32313fe0 solid 3px; */
+    border-radius: 5px;
+}
+
+#btn-1 {
+    background-color: var(--color-secondary);
+    border-color: transparent;
 }
 
 #mydiv {
@@ -79,6 +100,21 @@ p {
 } */
 
 
+header {
+    margin-bottom: 1.5rem;
+}
+
+#teste--p {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -190%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px #32313f;
+}
+
+
 /* MODAL  */
 #modal {
     height: 50px;
@@ -108,7 +144,10 @@ p {
         margin: auto;
         /* max-height: 80vh; */
         overflow: hidden;
+        border-width: 1px;
+        margin-bottom: 1rem;
     }
+
 
     .featurette {
         align-items: center;
@@ -123,5 +162,37 @@ p {
     footer {
         flex-direction: column;
     }
+
+    #show--mobile {
+        display: block;
+        padding: 0 50px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .marketing {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .marketing img {
+        margin-top: 8px;
+    }
+
+    .lead {
+        line-height: 1;
+        margin: 20px 0;
+    }
+
+    header {
+        margin-bottom: 0 !important;
+    }
+
+    #teste--p {
+        font-size: 1rem;
+    }
+
 
 }
