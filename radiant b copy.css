@@ -112,6 +112,7 @@ header {
     color: white;
     font-size: 2rem;
     text-shadow: 1px 1px #32313f;
+    text-wrap: nowrap;
 }
 
 
